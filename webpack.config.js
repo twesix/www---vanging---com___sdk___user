@@ -6,7 +6,7 @@ module.exports=
         entry:'./src/index.js',
         output:
             {
-                path:path.resolve(__dirname,'dev'),
+                path:path.resolve(__dirname,'./dev'),
                 filename:'index.js'
             },
         module:
@@ -20,24 +20,13 @@ module.exports=
                         {
                             test:/\.js$/,
                             loader:'babel-loader',
-                            exclude:'/node_modules/'
+                            exclude:'/node_modules/',
+                            query:
+                                {
+                                    presets: ['latest', 'stage-0']
+                                }
+
                         }
                     ]
-            },
-        babel:
-            {
-                presets:['latest']
-                // , plugins:
-                //     [
-                //         [
-                //             'transform-runtime',
-                //             {
-                //                 polyfill: true,
-                //                 regenerator: true,
-                //                 helpers: true,
-                //                 moduleName:'babel-runtime'
-                //             }
-                //         ]
-                // ]
             }
     };

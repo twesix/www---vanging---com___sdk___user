@@ -1,12 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const vars = require('../vars');
+const vars = require('../../vars');
 
-const pages =
-    [
-        '',
-        'example/',
-    ];
+const pages = vars.project.pages;
 
 const plugins= [];
 
@@ -19,8 +15,7 @@ pages.forEach(function(page)
             template: path.resolve(vars.path.src.pages, `${page}index.ejs`),
             chunks: [page],
             hash: true,
-            // minify: true,
-            // xhtml: true,
+            cache: true,
         }
     );
     plugins.push(plugin);

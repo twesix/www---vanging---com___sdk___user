@@ -1,5 +1,5 @@
 const path=require('path');
-const vars = require('./vars');
+const vars = require('../vars');
 
 module.exports =
     {

@@ -13,4 +13,5 @@ module.exports =
         ExtractText: require('./plugin-list/ExtractText'),
         HtmlWebpack: require('./plugin-list/HtmlWebpack'),
         Provide: require('./plugin-list/Provide'),
+        UglifyJs: require('./plugin-list/UglifyJs'),
     };

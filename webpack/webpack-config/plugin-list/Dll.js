@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const vars = require('../vars');
+const vars = require('../../vars');
 
 module.exports = new webpack.DllPlugin
 (

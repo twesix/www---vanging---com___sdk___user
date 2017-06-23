@@ -3,10 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "webpack --config webpack/webpack.dev.config.js",
-    "dll": "webpack --config webpack/webpack.dll.config.js",
-    "page": "webpack --config webpack/webpack.page.config.js",
-    "build": "webpack --config webpack/webpack.build.config.js"
+    "server": "webpack-dev-server --config webpack/development/webpack.server.config.js",
+
+    "development.entry": "webpack --config webpack/development/webpack.entry.config.js",
+    "development.dll": "webpack --config webpack/development/webpack.dll.config.js",
+    "development.page": "webpack --config webpack/development/webpack.page.config.js",
+    "development.all": "npm run development.dll && npm run development.page && npm run development.entry",
+
+    "production.entry": "webpack --config webpack/production/webpack.entry.config.js",
+    "production.dll": "webpack --config webpack/production/webpack.dll.config.js",
+    "production.page": "webpack --config webpack/production/webpack.page.config.js",
+    "production.all": "npm run production.dll && npm run production.page && npm run production.entry"
   },
   "dependencies": {
     "babel": "^6.23.0",
@@ -29,6 +36,7 @@
     "vue-template-compiler": "^2.3.3",
     "vue-template-loader": "^0.3.0",
     "vuex": "^2.3.1",
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.5.0"
   }
 }

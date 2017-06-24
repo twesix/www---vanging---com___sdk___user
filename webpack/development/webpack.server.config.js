@@ -11,6 +11,8 @@ module.exports=
             plugins.CommonsChunk,
             plugins.Provide,
             plugins.DllReference,
-            plugins.Define.development
-        ]
+            plugins.Define.development,
+            plugins.HotModuleReplacement
+        ],
+        devServer: require('../webpack-config/devServer'),
     };

@@ -1,9 +1,15 @@
 <template>
     <div id="app">
-        <nav_top></nav_top>
+        <div class="nav-top">
+            <nav_top></nav_top>
+        </div>
         <div class="body">
-            <nav_side></nav_side>
-            <content_main></content_main>
+            <div class="nav-side">
+                <nav_side></nav_side>
+            </div>
+            <div class="content-main">
+                <content_main></content_main>
+            </div>
         </div>
         <content_footer></content_footer>
     </div>
@@ -40,15 +46,6 @@
         }
 </script>
 <style scoped>
-    html,
-    body
-    {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-    }
     #app
     {
         width: 100%;
@@ -78,8 +75,9 @@
         /*clear: none;*/
         /*vertical-align: inherit;*/
     }
-    header
+    .nav-top
     {
+        width: 100%;
         /*定义项目的排列顺序。数值越小，排列越靠前，默认为0。*/
         order: 0;
 
@@ -93,10 +91,13 @@
         flex-basis: auto;
 
         /*flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto*/
-        flex: auto;
+        flex: 0 0 auto;
 
         /*属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性*/
         align-self: flex-start;
+
+        background-color: black;
+        color: white;
     }
     .body
     {
@@ -105,8 +106,30 @@
         display: flex;
 
     }
+    .nav-side
+    {
+        flex-grow: 0;
+        background-color: cornflowerblue;
+        max-width: 200px;
+    }
+    .content-main
+    {
+        flex-grow: 1;
+        background-color: darkgrey;
+    }
     footer
     {
         flex-grow: 0;
+    }
+</style>
+<style>
+    html,
+    body
+    {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
     }
 </style>

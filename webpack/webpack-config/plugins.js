@@ -14,4 +14,5 @@ module.exports =
         HtmlWebpack: require('./plugin-list/HtmlWebpack'),
         Provide: require('./plugin-list/Provide'),
         UglifyJs: require('./plugin-list/UglifyJs'),
+        HotModuleReplacement: require('./plugin-list/HotModuleReplacement'),
     };

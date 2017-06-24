@@ -4,12 +4,10 @@
   "private": true,
   "scripts": {
     "server": "webpack-dev-server --config webpack/development/webpack.server.config.js",
-
     "development.entry": "webpack --config webpack/development/webpack.entry.config.js",
     "development.dll": "webpack --config webpack/development/webpack.dll.config.js",
     "development.page": "webpack --config webpack/development/webpack.page.config.js",
     "development.all": "npm run development.dll && npm run development.page && npm run development.entry",
-
     "production.entry": "webpack --config webpack/production/webpack.entry.config.js",
     "production.dll": "webpack --config webpack/production/webpack.dll.config.js",
     "production.page": "webpack --config webpack/production/webpack.page.config.js",

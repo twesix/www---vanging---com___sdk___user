@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "server": "webpack-dev-server --config webpack/development/webpack.server.config.js",
+    "development.entry": "webpack --config webpack/development/webpack.entry.config.js",
+    "development.dll": "webpack --config webpack/development/webpack.dll.config.js",
+    "development.page": "webpack --config webpack/development/webpack.page.config.js",
+    "development.all": "npm run development.dll && npm run development.page && npm run development.entry",
+    "production.entry": "webpack --config webpack/production/webpack.entry.config.js",
+    "production.dll": "webpack --config webpack/production/webpack.dll.config.js",
+    "production.page": "webpack --config webpack/production/webpack.page.config.js",
+    "production.all": "npm run production.dll && npm run production.page && npm run production.entry"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.28.0",
+    "jquery": "^3.2.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.8",
+    "vue": "^2.3.3",
+    "vue-loader": "^12.0.2",
+    "vue-router": "^2.5.3",
+    "vue-template-compiler": "^2.3.3",
+    "vue-template-loader": "^0.3.0",
+    "vuex": "^2.3.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

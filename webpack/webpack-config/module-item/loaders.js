@@ -20,10 +20,20 @@ module.exports =
         },
         {
             test: /.(png|jpg|jpeg|gif)$/,
-            loader: 'url-loader?limit=8192&name=./static/img/[hash].[ext]'
+            loader: 'url-loader',
+            options:
+                {
+                    limit: 8192,
+                    name: 'vendor/img/[hash].[ext]',
+                }
         },
         {
             test: /.(eot|svg|ttf|woff|woff2)$/,
-            loader: 'url-loader?limit=8192&name=./static/font/[hash].[ext]'
+            loader: 'url-loader',
+            options:
+                {
+                    limit: 8192,
+                    name: 'vendor/font/[hash].[ext]',
+                }
         },
     ];

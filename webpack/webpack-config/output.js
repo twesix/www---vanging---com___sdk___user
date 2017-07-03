@@ -5,6 +5,6 @@ module.exports =
     {
         path: vars.path.build.root,
         filename:'[name]/entry.js',
-        publicPath: '/',
+        // publicPath: '/',
         chunkFilename: '[name].chunk.js'
     };

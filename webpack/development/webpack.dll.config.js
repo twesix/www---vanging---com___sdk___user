@@ -1,7 +1,7 @@
 const vars = require('../vars');
 const plugins = require('../webpack-config/plugins');
 
-module.exports =
+const config =
     {
         entry: vars.project.dlls.development,
         output:
@@ -18,3 +18,7 @@ module.exports =
                 plugins.Dll,
             ]
     };
+
+config.module.loaders.
+
+module.exports = config;

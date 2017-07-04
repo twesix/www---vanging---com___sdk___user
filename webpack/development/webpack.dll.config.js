@@ -19,6 +19,4 @@ const config =
             ]
     };
 
-config.module.loaders.
-
 module.exports = config;

@@ -12,7 +12,7 @@ pages.forEach(function(page)
     (
         {
             filename: `${page}index.html`,
-            template: path.resolve(vars.path.src.pages, `${page}index.ejs`),
+            template: path.resolve(vars.path.src.pages, `${page === '' ? 'index/' : page}index.ejs`),
             chunks: [page],
             hash: true,
             cache: true,

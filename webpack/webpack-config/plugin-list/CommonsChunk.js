@@ -4,6 +4,6 @@ module.exports = new webpack.optimize.CommonsChunkPlugin
 (
     {
         name: 'commons',
-        filename: 'vendor/[name].chunk.js',
+        filename: 'vendor/chunk/[name].js',
     }
 );

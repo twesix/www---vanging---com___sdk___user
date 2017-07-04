@@ -14,8 +14,8 @@ vars.path =
                 root: root.build,
                 vendor:
                     {
-                        root: path.resolve(root.build, 'vendor'),
-                        manifest: path.resolve(root.build, 'vendor/manifest.json')
+                        root: path.resolve(root.build, 'vendor', 'dll'),
+                        manifest: path.resolve(root.build, 'vendor', 'dll', 'manifest.json')
                     },
             },
         src:

@@ -12,7 +12,8 @@ module.exports=
             plugins.Provide,
             plugins.DllReference,
             plugins.Define.development,
-            plugins.HotModuleReplacement
+            plugins.HotModuleReplacement,
+            plugins.NamedModules
         ],
         devServer: require('../webpack-config/devServer'),
     };

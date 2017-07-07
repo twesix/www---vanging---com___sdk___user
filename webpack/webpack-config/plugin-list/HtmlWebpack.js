@@ -11,8 +11,8 @@ pages.forEach(function(page)
     const plugin = new HtmlWebpackPlugin
     (
         {
-            filename: `${page}index.html`,
-            template: path.resolve(vars.path.src.pages, `${page === '' ? 'index/' : page}index.ejs`),
+            filename: `${page}.html`,
+            template: path.resolve(vars.path.src.pages, `${page}/index.ejs`),
             chunks: [page],
             hash: true,
             cache: true,

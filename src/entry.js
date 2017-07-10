@@ -1,1 +1,1 @@
-alert('js sdk seed is working right ! !');
+import './test/util.test';

@@ -1,7 +1,6 @@
 const entry =
     {
-        'index': './src/pages/index/entry.js',
-        'example': './src/pages/example/entry.js',
+        'index': './src/entry.js',
     };
 
 module.exports = entry;

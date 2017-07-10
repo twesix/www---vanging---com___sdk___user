@@ -1,0 +1,1 @@
+alert('js sdk seed is working right ! !');

@@ -4,7 +4,6 @@ const vars = require('../vars');
 module.exports =
     {
         path: vars.path.build.root,
-        filename:'vendor/chunk/[name].entry.js',
-        // publicPath: '/',
+        filename:'[name].entry.js',
         chunkFilename: '[name].chunk.js'
     };

@@ -1,3 +1,5 @@
+import config from './config';
+
 export function get(url)
 {
     return new Promise(function(resolve,reject)
@@ -22,3 +24,12 @@ export function get(url)
         xhr.send();
     });
 }
+
+const be = {};
+
+be.get = function(url)
+{
+    return get(config.baseUrl + url);
+};
+
+export {be};

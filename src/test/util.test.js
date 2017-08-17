@@ -1,4 +1,4 @@
-import {get} from '../util';
+import {get, be} from '../util';
 
 export default function test()
 {
@@ -22,5 +22,13 @@ describe('[ util ] > get()', function()
                 console.log(err);
                 done();
             });
-    })
+    });
+});
+
+describe('[ util.be ] > get()', function()
+{
+    it('do request depending on the environment', function()
+    {
+        return be.get('/exist');
+    });
 });

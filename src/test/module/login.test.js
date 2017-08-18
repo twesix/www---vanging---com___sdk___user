@@ -1,4 +1,4 @@
-import login from '../../module/login';
+import login from '../../main/module/login';
 
 describe(' [ login ] > default()', function()
 {

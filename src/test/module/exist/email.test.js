@@ -1,4 +1,4 @@
-import email from '../../../module/exist/email';
+import email from '../../../main/module/exist/email';
 
 describe(' [ exist/email ] > default()', function()
 {

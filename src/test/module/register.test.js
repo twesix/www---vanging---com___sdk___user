@@ -1,4 +1,4 @@
-import register from '../../module/register';
+import register from '../../main/module/register';
 
 describe(' [ register ] > default()', function()
 {

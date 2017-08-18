@@ -11,3 +11,5 @@ module.exports=
                 plugins.UglifyJs
             ]
     };
+
+console.log(module.exports);

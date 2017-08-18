@@ -7,6 +7,8 @@ module.exports=
         module: require('../webpack-config/module'),
         plugins:
             [
-                plugins.Define.production,
+                plugins.Define.development,
             ]
     };
+
+console.log(module.exports);

@@ -1,4 +1,4 @@
-import {get, be} from '../util';
+import {get, be} from '../main/util';
 
 export default function test()
 {

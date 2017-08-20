@@ -2,11 +2,9 @@ const path=require('path');
 
 module.exports =
     {
-        Define:
-            {
-                development: require('./plugin-list/Define.development'),
-                production: require('./plugin-list/Define.production'),
-            },
+        Define: require('./plugin-list/Define'),
+        HotModuleReplacement: require('./plugin-list/HotModuleReplacement'),
         HtmlWebpack: require('./plugin-list/HtmlWebpack'),
+        NamedModules: require('./plugin-list/NamedModules'),
         UglifyJs: require('./plugin-list/UglifyJs'),
     };

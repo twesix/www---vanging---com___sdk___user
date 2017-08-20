@@ -6,7 +6,7 @@ const plugin = new HtmlWebpackPlugin
 (
     {
         filename: `index.html`,
-        template: path.resolve(vars.path.src.root, `index.ejs`),
+        template: path.resolve(vars.path.src.root, `index.html`),
         chunks: [],
         hash: true,
         cache: true,

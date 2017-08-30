@@ -7,7 +7,7 @@ module.exports=
         module: require('../webpack-config/module'),
         plugins:
         [
-            plugins.Define.development,
+            plugins.Define.production,
             plugins.HotModuleReplacement,
             plugins.NamedModules
         ],

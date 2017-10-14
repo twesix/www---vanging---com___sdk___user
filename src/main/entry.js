@@ -1,23 +1,29 @@
+const user = {};
+
+user.exist = {};
 import email from './module/exist/email';
+user.exist.email = email;
+import nickname from './module/exist/nickname';
+user.exist.nickname = nickname;
+import tel from './module/exist/tel';
+user.exist.tel = tel;
 import username from './module/exist/username';
+user.exist.username = username;
 
-const exist =
-    {
-        email,
-        username
-    };
+user.get = {};
 
-import getProfileFromSession from './module/getProfileFromSession';
-import login from './module/login';
-import register from './module/register';
+import profile from './module/get/profile';
+user.get.profile = profile;
 
-const user =
-    {
-        exist,
-        getProfileFromSession,
-        register,
-        login
-    };
+user.sign = {};
+user.sign.in = {};
+user.sign.up = {};
+
+import password from './module/sign/in/password';
+user.sign.in.password = password;
+
+import email_1 from './module/sign/up/email';
+user.sign.up.email = email_1;
 
 export default user;
 
